@@ -15,10 +15,12 @@
 </head>
 <body>
     <div id="app">
-        <h1>Emails:</h1>
+    <h1>Emails:</h1>
+    <div v-if="loading">
         <ul>
-        <li v-for="items in emails" class="email"> {{items}}</li>
-    </ul>
+            <li v-for="items in emails" class="email"> {{items}}</li>
+        </ul>
+    </div>
     </div>
 </body>
 </html>
